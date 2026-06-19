@@ -848,5 +848,124 @@ footer small {
   }
 }
 
+/* EXTRA DEPTH SECTIONS */
 
+.section-kicker {
+  color: #ffcc00;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.vault-services,
+.trade-process,
+.vault-drops {
+  padding: 7rem 8%;
+  position: relative;
+  overflow: hidden;
+}
+
+.vault-services h2,
+.trade-process h2,
+.vault-drops h2 {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 0.95;
+  margin: 0 0 3rem;
+}
+
+.service-grid,
+.drop-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.service-card,
+.step,
+.drop-card {
+  background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover,
+.step:hover,
+.drop-card:hover {
+  transform: translateY(-10px);
+  border-color: #ffcc00;
+  box-shadow: 0 0 35px rgba(255, 204, 0, 0.2);
+}
+
+.service-card span {
+  color: #ffcc00;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.service-card h3,
+.step h3,
+.drop-card h3 {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
+
+.service-card p,
+.step p,
+.drop-card p {
+  opacity: 0.82;
+  line-height: 1.6;
+}
+
+.trade-process {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 204, 0, 0.16), transparent 28%),
+    radial-gradient(circle at 80% 60%, rgba(255, 0, 80, 0.16), transparent 30%);
+}
+
+.process-content {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.process-steps {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.step span,
+.drop-label {
+  color: #ffcc00;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.drop-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.drop-card.featured {
+  transform: scale(1.04);
+  border-color: rgba(255, 204, 0, 0.5);
+  box-shadow: 0 0 50px rgba(255, 204, 0, 0.18);
+}
+
+@media (max-width: 900px) {
+  .service-grid,
+  .drop-grid,
+  .process-content {
+    grid-template-columns: 1fr;
+  }
+
+  .drop-card.featured {
+    transform: none;
+  }
+}
 
