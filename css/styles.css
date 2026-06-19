@@ -880,3 +880,42 @@ footer small {
     line-height: 1.7;
 }
 
+.trade-process {
+    padding: 8rem 0;
+}
+
+.process-content {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+}
+
+.section-heading-row {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto 4rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: end;
+}
+
+.drop-image {
+    height: 320px;
+}
+
+.drop-content {
+    padding: 2rem;
+}
+
+.drop-card h3 {
+    font-size: 2rem;
+}
+
+
+
